@@ -3,7 +3,7 @@ import { useApi } from "../../../api/use-api";
 import { AirportsWidget, AirportsEntity } from "../widget";
 
 export function useAirportsData() {
-  const apiKey = "de0010fc-2410-484d-a277-2a2a947025a2";
+  const apiKey = process.env.REACT_APP_AIRLABS_API_KEY;
   const airportsEndpoint = `https://airlabs.co/api/v9/airports?country_code=US&api_key=${apiKey}`;
   return useApi<AirportsEntity>(airportsEndpoint);
 }

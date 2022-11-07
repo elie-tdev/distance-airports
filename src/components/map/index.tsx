@@ -9,13 +9,15 @@ import { Spinner } from "../spinner";
 import { DistanceType } from "../airports/widget";
 import { useMediaQuery, useTheme } from "@mui/material";
 
+const googleMapApiKey = process.env.REACT_APP_GOOGLEMAP_API_KEY as string;
+
 interface AirportsMapProps {
   distance: DistanceType | null;
 }
 
 const AirportsMap = ({ distance }: AirportsMapProps): JSX.Element => {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBcEkM5j2QL31AZ5iI1xt515jctY4JEsZs",
+    googleMapsApiKey: googleMapApiKey,
   });
 
   if (!isLoaded) return <Spinner />;
