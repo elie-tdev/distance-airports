@@ -9,6 +9,10 @@ This app should calculate the distance between two United States airports in nau
 - [React Google Map](https://www.npmjs.com/package/@react-google-maps/api)
 - [Free Airlabs API](https://airlabs.co/)
 
+#### ENV
+- Create a .env file in the root.
+- Add [REACT_APP_AIRLABS_API_KEY](https://airlabs.co/signup) and [REACT_APP_GOOGLEMAP_API_KEY](https://developers.google.com/maps/documentation/javascript/get-api-key)
+
 #### Installation
 
 - Run `yarn install` if you use yarn or `npm install`.
@@ -16,4 +20,4 @@ This app should calculate the distance between two United States airports in nau
 
 #### Deployment
 
-- Live site(https://joujiyoshino-distance-airports.netlify.app/)
+- [Live site](https://joujiyoshino-distance-airports.netlify.app/)
