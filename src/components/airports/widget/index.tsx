@@ -70,8 +70,18 @@ export function AirportsWidget({ data, error }: AirportsWidgetProps) {
       >
         <Paper
           sx={{
-            marginRight: "40px",
-            marginLeft: "40px",
+            marginRight: {
+              xs: "0px",
+              sm: "0px",
+              md: "40px",
+              lg: "40px",
+            },
+            marginLeft: {
+              xs: "0px",
+              sm: "0px",
+              md: "40px",
+              lg: "40px",
+            },
             p: "32px 24px 24px",
           }}
         >
