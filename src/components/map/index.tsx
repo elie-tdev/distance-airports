@@ -30,7 +30,7 @@ function Map({ distance }: AirportsMapProps): JSX.Element {
     <GoogleMap
       id="map-google"
       zoom={useMediaQuery(theme.breakpoints.down("sm")) ? 3 : 5}
-      center={{ lat: 41.6, lng: -93.61 }}
+      center={{ lat: 42.6, lng: -93.61 }}
       options={{
         gestureHandling: "greedy",
         fullscreenControl: false,
@@ -41,6 +41,12 @@ function Map({ distance }: AirportsMapProps): JSX.Element {
         height: "100vh",
       }}
     >
+      <Marker
+        position={{
+          lat: 41.6,
+          lng: -93.61,
+        }}
+      ></Marker>
       {distance && (
         <>
           <Marker
