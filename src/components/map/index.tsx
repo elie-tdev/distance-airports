@@ -54,12 +54,6 @@ function Map({ distance }: AirportsMapProps): JSX.Element {
               lat: distance.startAirport.lat,
               lng: distance.startAirport.lng,
             }}
-          ></Marker>
-          <Marker
-            position={{
-              lat: distance.startAirport.lat,
-              lng: distance.startAirport.lng,
-            }}
             title={distance.startAirport.name}
             label="S"
           />
