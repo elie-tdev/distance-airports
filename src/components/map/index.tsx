@@ -41,12 +41,6 @@ function Map({ distance }: AirportsMapProps): JSX.Element {
         height: "100vh",
       }}
     >
-      <Marker
-        position={{
-          lat: 41.6,
-          lng: -93.61,
-        }}
-      ></Marker>
       {distance && (
         <>
           <Marker
